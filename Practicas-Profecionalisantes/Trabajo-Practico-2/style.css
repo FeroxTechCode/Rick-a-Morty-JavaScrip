@@ -1,0 +1,58 @@
+* {
+  margin: 1px;
+  padding: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #dfcfcf;
+}
+.header {
+  background-color: #492d7dcf;
+  border-bottom: 1px solid #f03030;
+  text-align: center;
+  padding: 16px;
+  margin: auto;
+}
+.meme {
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1px;
+  width: 150px;
+  height: 200px;
+}
+.uphead {
+  background-color: #fafafacf;
+  border-top: 1px solid #6a0e0e;
+  text-align: center;
+  padding: 16px;
+  margin: auto;
+}
+#Scroll {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.down {
+  background-color: #492d7dcf;
+  border-top: 1px solid #f03030;
+  text-align: center;
+  padding: 16px;
+  margin: auto;
+}
+#copyright {
+  color: #000000;
+  font-size: 14px;
+  background-color: chartreuse;
+}
+.contact-form {
+  background-color: #114cedcf;
+  border: 0cap solid #f20e0e;
+  text-align: left;
+  padding: 8px;
+  margin: auto;
+}
+.form-group {
+  margin-bottom: 0px;
+  text-align: left;
+}
