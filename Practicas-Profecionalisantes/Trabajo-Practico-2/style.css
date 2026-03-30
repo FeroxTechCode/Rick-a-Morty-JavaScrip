@@ -6,73 +6,74 @@
   font-family: "Courier New", Courier, monospace;
   background-color: #dfcfcf;
 }
+
 .header {
   background-color: #492d7dcf;
   border-bottom: 1px solid #f03030;
-  text-align: center;
   padding: 16px;
   margin: auto;
 }
-.meme {
-  border-radius: 50%;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 1px;
-  width: 150px;
-  height: 200px;
+
+.bienvenido {
+  color: #800080;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.letra-roja {
+  color: red;
+  font-weight: bold;
 }
 .uphead {
   background-color: #fafafacf;
   border-top: 1px solid #6a0e0e;
-  text-align: center;
   padding: 16px;
-  margin: auto;
 }
+
 #Scroll {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+input:valid,
+textarea:valid {
+  border: 2px solid green;
+  background-color: #f0fff0;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+  background-color: #fff0f0;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #800080;
+  outline: none;
+  box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+}
 .down {
   background-color: #492d7dcf;
   border-top: 1px solid #f03030;
-  text-align: center;
   padding: 16px;
-  margin: auto;
 }
+
 #copyright {
   color: #000000;
   font-size: 14px;
   background-color: chartreuse;
-}
-.contact-form {
-  background-color: #114cedcf;
-  border: 0cap solid #f20e0e;
-  text-align: left;
-  padding: 8px;
-  margin: auto;
-}
-.form-group {
-  margin-bottom: 0px;
-  text-align: left;
-}
-.bienvenido {
-    color: #800080; 
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-}
-input:valid, textarea:valid { 
-    border: 2px solid green; 
-    background-color: #f0fff0;
-}
-input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown) { 
-    border: 2px solid red; 
-    background-color: #fff0f0;/
-}
-input:focus, textarea:focus { 
-    border: 2px solid #800080; 
-    outline: none;
-    box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
 }
