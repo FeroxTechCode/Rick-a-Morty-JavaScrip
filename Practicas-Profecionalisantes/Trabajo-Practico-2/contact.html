@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - FeroxTechCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}">
+
+            <label for="motivo">Motivo:</label>
+            <select id="motivo" name="motivo">
+                <option value="reparacion">Reparación</option>
+                <option value="presupuesto">Presupuesto</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required minlength="10"></textarea>
+
+            <label><input type="checkbox" required> Acepto los términos</label>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
