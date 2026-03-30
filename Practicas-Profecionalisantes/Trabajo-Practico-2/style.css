@@ -56,3 +56,10 @@
   margin-bottom: 0px;
   text-align: left;
 }
+.bienvenido {
+    color: #800080; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
