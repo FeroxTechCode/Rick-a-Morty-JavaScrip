@@ -7,15 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header class="header">
-     <h1><img src="descarga.gif" width="150" height="200"> <p>Bienvenido Futuros Colegas!!</p><img src="descarga.gif" width="150" height="200"></h1>
-   <nav class="Navegacion" id="Scroll">
-        <a href="#Desempeño" class="link" id="MenUp">Desempeño</a>
-        <a href="#Experiencias" class="link" id="MenUp">Experiencias</a>
-        <a href="#Contactame" class="link" id="MenUp">Contactame</a>
+   <header>
+    <h1>
+        <img src="descarga.gif" alt="Gif del hombre purpura">
+    </h1>
+      <p class="bienvenido">Bienvenidos<span class="letra-roja"></span>Futuros Colegas!!
+    </h1>
+     <footer class="uphead">
+      <nav class="Navegacion" id="Scroll">
+        <a href="#Desempeño" class="link">Desempeño</a>
+        <a href="#Experiencias" class="link">Experiencias</a>
+        <a href="#Contactame" class="link">Contactame</a>
         </nav>
+      </footer>
   </header>
-  <p> Creo este pequeño espacio sobre mi, para dar a conocer aquellas caracteristicas y hablidades que poseo e introducirme de forma llamativa al ambiente laboral de manera internacional </p>
+  <a>
+    <p> Creo este pequeño espacio sobre mi, para dar a conocer aquellas caracteristicas y hablidades que poseo e introducirme de forma llamativa al ambiente laboral de manera internacional 
+    </p>
+  </a>
    <section class="Des" id="Desempeño">  
       <div class="desc"> 
         <h2>Habilidades que fui puliendo con los años!</h2>
@@ -54,8 +63,7 @@
 
         <p>o si lo desea puede colocar su datos aqui para que yo los contacte a ustedes</p>
 
-        <form action="#" method="POST" class="contact-form"
-        <button>type="submit">Enviar información</button>>
+      <form action="#" method="POST" class="contact-form">
         
         <div class="form-group">
           <label for="nombre">Nombre completo</label>
@@ -79,8 +87,8 @@
             placeholder="Correo para contactarme"
             required
           />
-        <div class="form-row">
-          <div class="form-group">
+        </div>
+        <div class="form-group">
             <label for="telefono">Teléfono</label>
             
             <input
@@ -104,7 +112,12 @@
             maxlength="40"
           ></textarea>
         </div>
-      </section>
+      </form>
+    </section>
     <H3><strong>Muchas gracias por su tiempo espero que estemos en contacto</strong></h3>
 </body>
+<footer class="down">
+  <p id="copyright">Copyright &copy; 2024 FeroxTechCode. Todos los derechos reservados.
+  </p>
+</footer>
 </html>
