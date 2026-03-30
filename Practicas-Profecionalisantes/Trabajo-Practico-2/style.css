@@ -63,3 +63,16 @@
     text-align: center;
     margin-top: 10px;
 }
+input:valid, textarea:valid { 
+    border: 2px solid green; 
+    background-color: #f0fff0;
+}
+input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown) { 
+    border: 2px solid red; 
+    background-color: #fff0f0;/
+}
+input:focus, textarea:focus { 
+    border: 2px solid #800080; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+}
