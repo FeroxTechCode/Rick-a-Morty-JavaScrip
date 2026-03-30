@@ -2,35 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - FeroxTechCode</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <form action="#" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required minlength="3">
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="descarga.gif" alt="Logo animado" class="logo-img">
+            <h1>Contacto</h1>
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="link">Inicio</a>
+            <a href="contact.html" class="link">Contactame</a>
+        </nav>
+    </header>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <main class="content-wrapper">
+        <section class="form-container">
+            <form action="#" method="POST" id="contactForm">
+                <div class="field">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Tu nombre ">
+                </div>
 
-            <label for="tel">Teléfono:</label>
-            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}">
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com ">
+                </div>
 
-            <label for="motivo">Motivo:</label>
-            <select id="motivo" name="motivo">
-                <option value="reparacion">Reparación</option>
-                <option value="presupuesto">Presupuesto</option>
-                <option value="otros">Otros</option>
-            </select>
+                <div class="field">
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="3875029222 ">
+                </div>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required minlength="10"></textarea>
+                <div class="field">
+                    <label for="motivo">Motivo:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="reparacion">Reparación </option>
+                        <option value="presupuesto">Presupuesto </option>
+                        <option value="otros">Otros </option>
+                    </select>
+                </div>
 
-            <label><input type="checkbox" required> Acepto los términos</label>
-            
-            <button type="submit">Enviar</button>
-        </form>
+                <div class="field">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required minlength="10" placeholder="Escribe aquí... "></textarea>
+                </div>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" required> 
+                    <span>Acepto los términos </span>
+                </label>
+                
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </section>
     </main>
+
+    <footer class="main-footer">
+        <p id="copyright">FeroxTechCode &copy; 2024 </p>
+    </footer>
 </body>
 </html>

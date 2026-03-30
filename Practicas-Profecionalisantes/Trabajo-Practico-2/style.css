@@ -1,79 +1,157 @@
+:root {
+    --primary-color: #492d7d;
+    --accent-color: #f03030;
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --success: #28a745;
+    --error: #dc3545;
+}
+
 * {
-  margin: 1px;
-  padding: 4px;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  background-color: #dfcfcf;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header {
-  background-color: #492d7dcf;
-  border-bottom: 1px solid #f03030;
-  padding: 16px;
-  margin: auto;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-.bienvenido {
-  color: #800080;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 10px;
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
 }
 
-.letra-roja {
-  color: red;
-  font-weight: bold;
-}
-.uphead {
-  background-color: #fafafacf;
-  border-top: 1px solid #6a0e0e;
-  padding: 16px;
+.logo-img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
-#Scroll {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
-form {
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-}
-input:valid,
-textarea:valid {
-  border: 2px solid green;
-  background-color: #f0fff0;
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
 }
 
-input:invalid:not(:placeholder-shown),
-textarea:invalid:not(:placeholder-shown) {
-  border: 2px solid red;
-  background-color: #fff0f0;
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-input:focus,
-textarea:focus {
-  border: 2px solid #800080;
-  outline: none;
-  box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+.content-wrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
-.down {
-  background-color: #492d7dcf;
-  border-top: 1px solid #f03030;
-  padding: 16px;
+
+.info-section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+.form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.field {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(73, 45, 125, 0.3);
+}
+
+input:not(:placeholder-shown):valid {
+    border-color: var(--success);
+}
+
+input:not(:placeholder-shown):invalid {
+    border-color: var(--error);
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #35215d;
+}
+
+.main-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 #copyright {
-  color: #000000;
-  font-size: 14px;
-  background-color: chartreuse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
 }
