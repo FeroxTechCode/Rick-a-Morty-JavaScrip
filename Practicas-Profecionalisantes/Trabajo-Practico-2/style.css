@@ -1,10 +1,8 @@
 :root {
-    --primary-color: #492d7d;
-    --accent-color: #f03030;
-    --bg-color: #f4f4f9;
-    --text-color: #333;
-    --success: #28a745;
-    --error: #dc3545;
+    --primary: #492d7d;
+    --accent: #f03030;
+    --bg: #f4f4f9;
+    --text: #333;
 }
 
 * {
@@ -14,144 +12,98 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: "Courier New", Courier, monospace;
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
 }
 
 .main-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 2rem 1rem;
+    background-color: #492d7dcf;
+    border-bottom: 2px solid var(--accent);
+    padding: 20px;
     text-align: center;
-    border-bottom: 4px solid var(--accent-color);
+    color: white;
 }
 
 .logo-img {
-    width: 80px;
+    width: 80px; 
     height: auto;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+    border-radius: 10px;
 }
+
+.bienvenido {
+    color: #800080;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.letra-roja { color: red; }
 
 .navigation {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
 }
 
 .link {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background 0.3s;
+    padding: 5px 10px;
+    border: 1px solid transparent;
 }
 
-.link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
+.link:hover { border-bottom: 1px solid white; }
 
 .content-wrapper {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-.info-section {
+.info-section, .form-container {
     background: white;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    border-left: 5px solid var(--accent-color);
-    padding-left: 10px;
-}
-
-ul {
-    list-style: none;
-    text-align: left;
-}
-
-li {
-    margin-bottom: 0.5rem;
-}
-.form-container {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.field {
-    margin-bottom: 1.2rem;
-    text-align: left;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.4rem;
-}
+.field { margin-bottom: 15px; text-align: left; }
+label { display: block; font-weight: bold; }
 
 input, select, textarea {
     width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
 }
 
-input:focus, textarea:focus {
-    border-color: var(--primary-color);
-    outline: none;
-    box-shadow: 0 0 8px rgba(73, 45, 125, 0.3);
-}
-
-input:not(:placeholder-shown):valid {
-    border-color: var(--success);
-}
-
-input:not(:placeholder-shown):invalid {
-    border-color: var(--error);
-}
+input:valid, textarea:valid { border: 2px solid green; }
+input:invalid:not(:placeholder-shown) { border: 2px solid red; }
 
 .btn-submit {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    transition: background 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #35215d;
+    font-weight: bold;
 }
 
 .main-footer {
-    background-color: #222;
+    background-color: #492d7dcf;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
 }
 
 #copyright {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #aaa;
+    background-color: chartreuse;
+    color: black;
+    display: inline-block;
+    padding: 5px;
 }
