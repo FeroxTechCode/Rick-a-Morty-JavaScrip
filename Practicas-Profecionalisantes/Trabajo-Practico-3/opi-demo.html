@@ -9,11 +9,13 @@
         background: #1a1a1a;
         color: white;
         padding: 20px;
+        text-align: center;
       }
       .grid-personajes {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 20px;
+        margin-top: 30px;
       }
       .card {
         background: #2d2d2d;
@@ -21,6 +23,7 @@
         overflow: hidden;
         transition: transform 0.3s;
         border: 1px solid #444;
+        text-align: left;
       }
       .card:hover {
         transform: scale(1.05);
@@ -43,18 +46,38 @@
       .muerto {
         color: #ff4444;
       }
+      input#buscador {
+        padding: 12px;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 8px;
+        border: none;
+        font-size: 1rem;
+      }
     </style>
   </head>
   <body>
     <h1>Personajes del Multiverso</h1>
-    <p>Consumiendo datos de la API pública recomendada por el IES 6.001</p>
+    <p>Consumiendo la API de Rick and Morty</p>
+
+    <div style="margin-bottom: 20px">
+      <input
+        type="text"
+        id="buscador"
+        placeholder="Escribí un nombre (ej: Rick)..."
+      />
+      <p
+        id="mensaje-info"
+        style="color: gray; font-size: 0.9rem; margin-top: 5px"
+      >
+        Ingresá 3 caracteres para buscar.
+      </p>
+    </div>
 
     <div id="mensaje-carga" style="display: none; color: cyan">
-      🛸 Saltando entre dimensiones (Cargando)...
+      🛸 Viajando por el portal...
     </div>
-    <div id="mensaje-error" style="display: none; color: red">
-      ⚠️ Error en el portal de datos.
-    </div>
+    <div id="mensaje-error" style="display: none; color: #ff4444"></div>
 
     <div id="contenedor-personajes" class="grid-personajes"></div>
 
