@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiverso API - Personajes</title>
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        background: #1a1a1a;
+        color: white;
+        padding: 20px;
+      }
+      .grid-personajes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background: #2d2d2d;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        border: 1px solid #444;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        border-color: #00ff00;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .info {
+        padding: 15px;
+      }
+      .status {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+      .vivo {
+        color: #00ff00;
+      }
+      .muerto {
+        color: #ff4444;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personajes del Multiverso</h1>
+    <p>Consumiendo datos de la API pública recomendada por el IES 6.001</p>
+
+    <div id="mensaje-carga" style="display: none; color: cyan">
+      🛸 Saltando entre dimensiones (Cargando)...
+    </div>
+    <div id="mensaje-error" style="display: none; color: red">
+      ⚠️ Error en el portal de datos.
+    </div>
+
+    <div id="contenedor-personajes" class="grid-personajes"></div>
+
+    <script src="opi-demo.js"></script>
+  </body>
+</html>
