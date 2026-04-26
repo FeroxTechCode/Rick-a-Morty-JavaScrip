@@ -42,4 +42,20 @@ Proyecto académico desarrollado para la profesionalización en JavaScript, apli
 
     Rama principal: JavaBranch.
 
-    Commits: +8 commits descriptivos siguiendo estándares de Git.
+    Commits: +16 commits descriptivos y paso realizados para el desarrollo del proyecto
+
+⚙️ Instrucciones de Uso de las paginas
+
+  Opi-demo.html 
+  
+  Es una base de dato de los personajes de Rick y Morty, pimero te muestra todos por defecto, pero puedes buscar por personaje en espesifico o por variantes del mismo, a su ves de ver datos en la actualidad segundo el canon de la hisotoria (aun que siguiendo algunos datos esta desactualizado)
+
+  Todo.html 
+  
+  Es una pagina con la caracteristica de poder marcar y determinar tareas pendientes con cualquier tipo de prosito que requiera tareas a concretar, te muestra cuantas hay pendientes, puedes agregar las que quieras realizar y eleminzar aquellas que ya esten realziadas
+
+  Productos.html
+  
+  Es una pagina donde pudes observar los productos en venta que dispone la empresa/pagina y determinar cuaales puedes acceder determinando tu presupuesto disponible de forma manual con una barra reguladora de preccio, ademas de poder observar si esta disponible o no en la tienda para descartar productos
+
+  Esta breve eplicacion de la pagina es lo que determina como usarlas
