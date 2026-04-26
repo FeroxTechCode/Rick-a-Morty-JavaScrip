@@ -1,0 +1,52 @@
+💻 Parte 2: Pasos para Git Bash (Commits y Branches)
+
+Si necesitás llegar a los 10 commits y usar branches (ramas), seguí este flujo en tu terminal. No hace falta que los cambios sean gigantes; en programación, los commits pequeños y descriptivos son los mejores.
+1. Crear una rama nueva (Branch)
+
+Es buena práctica no trabajar siempre en main. Vamos a crear una para los ajustes finales:
+Bash
+
+git checkout -b ajustes-finales
+
+2. Cómo generar los 10 commits descriptivos
+
+Si ya tenés algunos, genial. Si no, podés ir haciendo cambios pequeños (como corregir un texto o agregar un comentario en el CSS) y guardarlos por separado:
+
+    Commit 1: git commit -m "feat: estructura inicial HTML5"
+
+    Commit 2: git commit -m "style: agregar variables :root y paleta de colores"
+
+    Commit 3: git commit -m "feat: implementar Hero Section con Flexbox"
+
+    Commit 4: git commit -m "style: diseño de tarjetas de habilidades con transiciones"
+
+    Commit 5: git commit -m "feat: maquetación Grid con template-areas"
+
+    Commit 6: git commit -m "feat: galería de proyectos con auto-fit y minmax"
+
+    Commit 7: git commit -m "style: ajustes de estilo Purple Man Edition"
+
+    Commit 8: git commit -m "responsive: agregar media queries para tablet y desktop"
+
+    Commit 9: git commit -m "docs: actualizar README con descripción y tecnologías"
+
+    Commit 10: git commit -m "fix: corregir centrado de elementos en mobile"
+
+    ¿Cómo hacés cada uno? Hacés un cambio en el código, guardás el archivo y en la terminal ponés:
+    git add .
+    git commit -m "el mensaje que corresponda"
+
+3. Fusionar y subir a GitHub
+
+Una vez que termines tus commits en la rama de ajustes, volvés a la principal y subís todo:
+Bash
+
+git checkout main
+git merge ajustes-finales
+git push origin main
+
+💡 Un último consejo de "colega"
+
+Para las capturas de pantalla del README, podés usar la herramienta de recortes de Windows o el mismo Chrome (F12 -> icono de celular -> menú de tres puntitos -> Capture screenshot). Guardalas en la carpeta images con los nombres exactos que pusimos en el README (mobile.png, etc.) para que se vean bien.
+
+¿Ya tenés el link de GitHub Pages funcionando o querés que repasemos cómo activarlo en la web?
