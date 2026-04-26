@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Mis Tareas - Salta 2026</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="todo.css" />
   </head>
   <body>
-    <div class="todo-container">
+    <main class="todo-container">
       <h2>Lista de Tareas</h2>
 
       <form id="form-tarea" class="form-tarea">
         <input type="text" id="input-tarea" placeholder="¿Qué hay que hacer?" />
         <button type="submit" id="btn-agregar">Añadir</button>
       </form>
+
       <ul id="lista-tareas"></ul>
+
       <div class="contador">
         Tareas pendientes... <span id="cantidad-pendientes">0</span>
       </div>
-    </div>
+    </main>
 
     <script src="todo.js"></script>
   </body>

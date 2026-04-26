@@ -1,6 +1,3 @@
-/**
- * (a) Calcular el promedio
- */
 const calcularPromedio = (notas) => {
   if (notas.length === 0) return 0;
   const suma = notas.reduce(
@@ -10,29 +7,20 @@ const calcularPromedio = (notas) => {
   return suma / notas.length;
 };
 
-/**
- * (b) Filtrar alumnos aprobados  */
 const filtrarAprobados = (alumnos) => {
   return alumnos.filter((alumno) => alumno.nota >= 6);
 };
 
-/**
- * (c) Formatear array de objetos
- */
 const formatearAlumnos = (alumnos) => {
   return alumnos.map(
     (alumno) => `Nombre: ${alumno.nombre} - Nota: ${alumno.nota}`,
   );
 };
 
-/**
- * (d) Buscar un alumno por nombre usando find()
- */
 const buscarAlumno = (alumnos, nombreBuscado) => {
   return alumnos.find((alumno) => alumno.nombre === nombreBuscado);
 };
 
-// PRUEBAS CON CONSOLE.LOG
 const misNotas = [8, 7, 9, 10, 6];
 const misAlumnos = [
   { nombre: "Ariel", nota: 9 },
