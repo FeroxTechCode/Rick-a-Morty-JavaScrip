@@ -73,6 +73,6 @@ Evidencia de Funcionalidad
    Vista general del diseño y disposición de los elementos.
    ![Stock de Productos](Capturas/Stock-de-productos.png)
 
-4. Repositorio y API
+4. Repositorio y API.
    Uso de la API estructurado para el repositorio.
    ![Uso de la Api](Capturas/Uso-de-la-Api-como-repositorio.png)
