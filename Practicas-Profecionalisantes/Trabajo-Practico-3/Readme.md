@@ -46,16 +46,33 @@ Proyecto académico desarrollado para la profesionalización en JavaScript, apli
 
 ⚙️ Instrucciones de Uso de las paginas
 
-  Opi-demo.html 
-  
-  Es una base de dato de los personajes de Rick y Morty, pimero te muestra todos por defecto, pero puedes buscar por personaje en espesifico o por variantes del mismo, a su ves de ver datos en la actualidad segundo el canon de la hisotoria (aun que siguiendo algunos datos esta desactualizado)
+Opi-demo.html
 
-  Todo.html 
-  
-  Es una pagina con la caracteristica de poder marcar y determinar tareas pendientes con cualquier tipo de prosito que requiera tareas a concretar, te muestra cuantas hay pendientes, puedes agregar las que quieras realizar y eleminzar aquellas que ya esten realziadas
+Es una base de dato de los personajes de Rick y Morty, pimero te muestra todos por defecto, pero puedes buscar por personaje en espesifico o por variantes del mismo, a su ves de ver datos en la actualidad segundo el canon de la hisotoria (aun que siguiendo algunos datos esta desactualizado)
 
-  Productos.html
-  
-  Es una pagina donde pudes observar los productos en venta que dispone la empresa/pagina y determinar cuaales puedes acceder determinando tu presupuesto disponible de forma manual con una barra reguladora de preccio, ademas de poder observar si esta disponible o no en la tienda para descartar productos
+Todo.html
 
-  Esta breve eplicacion de la pagina es lo que determina como usarlas
+Es una pagina con la caracteristica de poder marcar y determinar tareas pendientes con cualquier tipo de prosito que requiera tareas a concretar, te muestra cuantas hay pendientes, puedes agregar las que quieras realizar y eleminzar aquellas que ya esten realziadas
+
+Productos.html
+
+Es una pagina donde pudes observar los productos en venta que dispone la empresa/pagina y determinar cuaales puedes acceder determinando tu presupuesto disponible de forma manual con una barra reguladora de preccio, ademas de poder observar si esta disponible o no en la tienda para descartar productos
+
+Esta breve eplicacion de la pagina es lo que determina como usarlas
+Evidencia de Funcionalidad
+
+1. Consumo de API (Fetch)
+   Demostración de la conexión exitosa con el servidor externo.
+   ![Captura Fetch API](Capturas/Captura-FetchaPI.png)
+
+2. Ejercicios de Lógica JavaScript
+   Pruebas de funciones de flecha ejecutadas en la consola del navegador.
+   ![Ejercicios Java](Capturas/Ejercicios-java.png)
+
+3. Catálogo de Productos
+   Vista general del diseño y disposición de los elementos.
+   ![Stock de Productos](Capturas/Stock-de-productos.png)
+
+4. Repositorio y API
+   Uso de la API estructurado para el repositorio.
+   ![Uso de la Api](Capturas/Uso-de-la-Api-como-repositorio.png)
