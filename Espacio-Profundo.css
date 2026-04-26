@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #202329; /* Gris oscuro oficial de la serie */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.portal-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  border: 3px solid #97ce4c; /* Verde portal */
+  box-shadow: 0 0 20px #97ce4c;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #00b5cc; /* Azul Rick */
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: #97ce4c;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #ff9800;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border: 2px solid #97ce4c;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: #97ce4c;
+  color: #202329;
+  box-shadow: 0 0 30px #97ce4c;
+  transform: scale(1.05);
+}
+
+.number {
+  background: #00b5cc;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-size: 0.8rem;
+}
